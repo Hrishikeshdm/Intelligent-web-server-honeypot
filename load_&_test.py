@@ -21,7 +21,7 @@ model = load_model("seq2seq_enhanced_model.keras")
 sequence_length = 50
 
 # Test prediction with diverse sequence
-skip_offset = 2750000  # Target Tuesday (DDoS) or Friday (PortScan) data
+skip_offset = 2750000 
 test_doc = seq_collection.find_one({"_id": seq_collection.find()[skip_offset]["_id"]})
 test_labels = test_doc["X"]["labels"]
 test_num = np.array(test_doc["X"]["flow_durations"] + test_doc["X"]["fwd_packets"] + 
