@@ -13,7 +13,7 @@ seq_collection = db["preprocessed_sequences"]
 
 seq_collection.drop()
 
-csv_folder = "C:/Users/Lenovo/Desktop/IWSH/grok/MachineLearningCVE" 
+csv_folder = "C:/Users/Lenovo/Desktop/IWSH/prog/MachineLearningCVE" 
 
 # Step 1: Load and preprocess CSV files
 all_labels = []
